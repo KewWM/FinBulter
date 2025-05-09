@@ -4,38 +4,50 @@
     "slug": "FinBulter",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "icon": "./assets/FinBulter.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/FinBulter.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a1a1a",
+      "imageResizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "splash": {
+        "image": "./assets/FinBulter.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#1a1a1a",
+        "dark": {
+          "image": "./assets/FinBulter.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#1a1a1a"
+        }
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/FinBulter.png",
+        "backgroundColor": "#1a1a1a"
+      },
+      "splash": {
+        "image": "./assets/FinBulter.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#1a1a1a"
+      },
+      "package": "com.lybric.FinBulter"
     },
     "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/FinBulter.png"
     },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
-    }
+    "extra": {
+      "eas": {
+        "projectId": "2beb11e7-cea2-480b-a234-4339725ff992"
+      }
+    },
+    "owner": "lybric"
   }
 }
